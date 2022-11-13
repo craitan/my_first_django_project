@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>t4t</title>
+</head>
+
+<body>
+<div id="box">
+    <header>
+        <h1><a class="index-navigation" href="{% url 'index' %}"><span><font color="red">THANKS</font></span> 4
+            <span><font color="red">TRADE</font></span></a></h1>
+
+        <nav>
+            {% if  request.user.is_authenticated %}
+                <a href="{% url 'add item' %}">Create Item</a>
+                <a href="#">Trade items</a>
+                <a href="{% url 'details user' pk=request.user.pk %}">Profile</a>
+                <a href="{% url 'logout user' %}">Sign Out</a>
+            {% else %}
+                <a href="{% url 'register user' %}">Sign up</a>
+                <a href="{% url 'login user' %}">Sign in</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <div id="footer">
+
+        <center><font color="white"> CRATED BY YULIYAN PETROV </font></center>
+        <a class="home" href="https://github.com/craitan">
+            <div>
+                <center><img style="" src="{% static 'images/github-icon-38988.png' %}" height="50"
+                             width="50"></center>
+            </div>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>

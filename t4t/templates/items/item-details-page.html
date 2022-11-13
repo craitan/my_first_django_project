@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<section id="car-details">
+        <h1>Item Details</h1>
+        <div class="info-section">
+            <div class="car-header">
+                <h1>{{ item.item_name|capfirst}}</h1>
+                <p><span class="description">Item piece: {{ item.get_armor_piece_display}}</span></p>
+                <p><span class="description">Item level: {{ item.item_level }}</span></p>
+                <p><span class="description">Item strength: {{ item.item_strength }}</span></p>
+                <p><span class="description">Item dexterity: {{ item.item_dexterity }}</span></p>
+                <p><span class="description">Item vitality: {{ item.item_vitality }}</span></p>
+                <p><span class="description">Item intellect: {{ item.item_intellect }}</span></p>
+                <p><span class="description">Item description: {{ item.item_short_description|capfirst }}</span></p>
+            </div>
+
+            <div class="buttons">
+                <a href="{% url 'edit item' pk=item_pk username=username %}" class="edit-button">Edit</a>
+                <a href="{% url 'delete item' pk=item_pk username=username %}" class="delete-button">Delete</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
