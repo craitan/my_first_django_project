@@ -57,8 +57,7 @@ class UserDeleteView(views.DeleteView):
     success_url = reverse_lazy('market')
 
 
-class UserItemsView(views.ListView):
-    template_name = 'items/my-items.html'
+class UserStashView(views.ListView):
+    template_name = 'items/../../templates/accounts/personal-stash.html'
     model = Item
 
-    # paginate_by = 3

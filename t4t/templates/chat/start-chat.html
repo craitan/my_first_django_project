@@ -1,9 +1,9 @@
 {% extends 'base/base.html' %}
 {% block content %}
     <section id="create-page" class="auth">
-        <form method="post" action="{% url 'add item' %}">
+        <form method="post" action="{% url 'chat start' %}">
             <div class="old-container">
-                <h1 class="form-create-headline">Create Item</h1>
+                <h1 class="form-create-headline">Start trade chat</h1>
                 {{ form }}
                 {% csrf_token %}
                 <input class="btn" type="submit" value="Create Item">

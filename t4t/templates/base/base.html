@@ -20,7 +20,7 @@
             {% if  request.user.is_authenticated %}
                 <a href="{% url 'market' %}">Marketplace</a>
                 <a href="{% url 'add item' %}">Create Item</a>
-                <a href="{% url 'my items' pk=request.user.pk %}">My items</a>
+                <a href="{% url 'my items' pk=request.user.pk %}">My stash</a>
                 <a href="{% url 'details user' pk=request.user.pk %}">Profile</a>
                 <a href="{% url 'logout user' %}">Sign Out</a>
             {% else %}

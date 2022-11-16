@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     't4t.accounts',
+    't4t.common',
     't4t.chat',
     't4t.items',
 

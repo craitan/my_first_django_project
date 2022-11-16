@@ -2,7 +2,7 @@
 {% block content %}
     <section id="create-page" class="auth">
         <form method="post" action="{% url 'edit item' pk=pet_pk username=username %}">
-            <div class="container">
+            <div class="old-container">
                 <h1>Edit Item</h1>
                 {{form}}
                 {% csrf_token %}

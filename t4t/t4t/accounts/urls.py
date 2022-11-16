@@ -1,7 +1,7 @@
 from django.urls import path, include
 from django.contrib.auth.decorators import login_required
 
-from t4t.accounts.views import SignUpView, SignInView, SignOutView, UserDetailsView, UserEditView, UserDeleteView, UserItemsView
+from t4t.accounts.views import SignUpView, SignInView, SignOutView, UserDetailsView, UserEditView, UserDeleteView, UserStashView
 
 
 urlpatterns = (
@@ -12,7 +12,7 @@ urlpatterns = (
         path('', (UserDetailsView.as_view()), name='details user'),
         path('edit/', (UserEditView.as_view()), name='edit user'),
         path('delete/', (UserDeleteView.as_view()), name='delete user'),
-        path('my-items/', UserItemsView.as_view(), name='my items'),
+        path('stash/', UserStashView.as_view(), name='my items'),
     ]))
 
 )

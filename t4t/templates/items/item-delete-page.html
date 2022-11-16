@@ -2,7 +2,7 @@
 {% block content %}
     <section id="delete-page" class="auth">
         <form method="post" action="{% url 'delete item' pk=pet_pk username=username %}">
-            <div class="container">
+            <div class="old-container">
                 <h1>Delete item</h1>
 
                 {{ form }}
