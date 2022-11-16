@@ -1,7 +1,9 @@
 from django.urls import path
 
-from t4t.common.views import index
+from t4t.common.views import MarketView, HomePageView
 
 urlpatterns = (
-    path('', index, name='index'),
+    path('', HomePageView.as_view(), name='home page'),
+    path('market/', MarketView.as_view(), name='market'),
+
 )

@@ -21,13 +21,16 @@ class ItemEditForm(ItemBaseForm):
 
 
 class ItemDeleteForm(ItemBaseForm):
-    disabled_fields = '__all__'
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._disable_fields()
+        self.__set_disable_fields()
 
     def save(self, commit=True):
         if commit:
             self.instance.delete()
         return self.instance
+
+    def __set_disable_fields(self):
+        for _, field in self.fields.items():
+            field.widget.attrs['readonly'] = 'readonly'
+

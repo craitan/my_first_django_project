@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-sssssssss
-</body>
-</html>
+{% extends 'base/base.html' %}
+{% block content %}
+    <section id="delete-page" class="auth">
+        <form method="post" action="{% url 'delete item' pk=pet_pk username=username %}">
+            <div class="container">
+                <h1>Delete item</h1>
+
+                {{ form }}
+                <input class="btn submit" type="submit" value="Delete Item">
+                {% csrf_token %}
+            </div>
+        </form>
+    </section>
+{% endblock %}

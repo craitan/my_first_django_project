@@ -1,6 +1,12 @@
 from django.shortcuts import render
+from django.views import generic as views
+from t4t.items.models import Item
 
 
-def index(reqeust):
-    context = {}
-    return render(reqeust, 'common/home-page.html', context)
+class HomePageView(views.TemplateView):
+    template_name = 'common/home-page.html'
+
+
+class MarketView(views.ListView):
+    model = Item
+    template_name = 'common/market-page.html'

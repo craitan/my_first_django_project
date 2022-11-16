@@ -9,5 +9,6 @@ urlpatterns = (
         path('', details_item, name='details item'),
         path('edit/', edit_item, name='edit item'),
         path('delete/', delete_item, name='delete item'),
+
     ]))
 )

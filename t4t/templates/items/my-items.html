@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+    <section id="catalogue">
+        <!--TODO: fix this to show how many items the current user have in stash -->
+        <h1>Items in stash: </h1>
+        {% for item in object_list %}
+            {% if item.user == request.user %}
+                <div class="car-card">
+                    <div class="image-wrap">
+                        {% if item.armor_piece == 'helm' %}
+                            <img src="{% static 'images/healm.png' %}"
+                                 alt="Helm">
+                        {% elif item.armor_piece == 'armor' %}
+                            <img src="{% static 'images/ancient_armor.png' %}"
+                                 alt="Armor">
+                        {% elif item.armor_piece == 'gloves' %}
+                            <img src="{% static 'images/gloves.png' %}"
+                                 alt="Gloves">
+                        {% elif item.armor_piece == 'boots' %}
+                            <img src="{% static 'images/plate_boots.png' %}"
+                                 alt="Boots">
+                        {% elif item.armor_piece == 'weapon' %}
+                            <img src="{% static 'images/flail.png' %}"
+                                 alt="Weapon">
+                        {% elif item.armor_piece == 'shield' %}
+                            <img src="{% static 'images/aerin_shield.png' %}"
+                                 alt="Shield">
+                        {% endif %}
+                    </div>
+                    <h1>Item slot: {{ item.get_item }}</h1>
+                    <h1>Item name: {{ item.item_name|capfirst }}</h1>
+                    <div class="details-buttons">
+                        <a href="{% url 'details item' pk=item.pk username=request.user.username %}"
+                           class="details-btn">Details</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
+{% endblock %}

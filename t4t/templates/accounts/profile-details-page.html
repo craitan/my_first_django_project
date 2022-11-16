@@ -21,44 +21,4 @@
             </div>
         </div>
     </section>
-    <section id="catalogue">
-        <h1>Your items in the armory: {{ object.item_set.count }}</h1>
-        {% for item in object.item_set.all %}
-            <div class="car-card">
-                <div class="image-wrap">
-                    {% if item.armor_piece == 'helm' %}
-                        <img src="{% static 'images/healm.png' %}"
-                             alt="Helm">
-                    {% elif item.armor_piece == 'armor' %}
-                        <img src="{% static 'images/ancient_armor.png' %}"
-                             alt="Armor">
-                    {% elif item.armor_piece == 'gloves' %}
-                        <img src="{% static 'images/gloves.png' %}"
-                             alt="Gloves">
-                    {% elif item.armor_piece == 'boots' %}
-                        <img src="{% static 'images/plate_boots.png' %}"
-                             alt="Boots">
-                    {% elif item.armor_piece == 'weapon' %}
-                        <img src="{% static 'images/flail.png' %}"
-                             alt="Weapon">
-                    {% elif item.armor_piece == 'shield' %}
-                        <img src="{% static 'images/aerin_shield.png' %}"
-                             alt="Shield">
-                    {% endif %}
-                </div>
-                <h1>{{ item.get_item }}</h1>
-                <h1>{{ item.item_name|capfirst }}</h1>
-                <h1>{{ item.pk }}</h1>
-                <h1>{{ object.username }}</h1>
-
-
-                <div class="details-buttons">
-                    <!-- car details button -->
-                    <a href="{% url 'details item' pk=item.pk username=object.username %}"
-                       class="details-btn">Details</a>
-                </div>
-            </div>
-        {% endfor %}
-    </section>
-
 {% endblock %}

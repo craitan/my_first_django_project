@@ -19,11 +19,11 @@ class ArmorPiece(ChoicesEnumMixin, Enum):
     shield = 'Shield'
 
 class Item(models.Model):
-    MAX_LEN_NAME = 50
+    MAX_LEN_NAME = 20
     MIN_LEN_NAME = 3
     MIN_ITEM_LEVEL = 1
     MAX_ITEM_LEVEL = 60
-    MAX_STATS_ON_ITEM = 200
+    MAX_STATS_ON_ITEM = 150
 
     item_name = models.CharField(
         max_length=MAX_LEN_NAME,
