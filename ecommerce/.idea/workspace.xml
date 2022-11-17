@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0002_alter_appuser_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0003_alter_appuser_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/arrow-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accounts/register-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/cart-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/experiment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Hg5FykNaxO36cWQtYtdQhK2OGb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Python projects/my_first_django_project/t4t",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\base" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ecommerce" type="Python.DjangoServer" factoryName="Django server">
+      <module name="ecommerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ecommerce.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="" />
+      <created>1668693787187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668693787187</updated>
+      <workItem from="1668693810806" duration="338000" />
+      <workItem from="1668694163178" duration="13183000" />
+      <workItem from="1668707393118" duration="5400000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
