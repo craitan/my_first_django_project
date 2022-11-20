@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+<div class="box-element">
+
+                <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+
+                <br>
+                <br>
+                <table class="table">
+                    <tr>
+                        <th><h5>User name: <strong>{{ object.first_name|capfirst }} {{ object.last_name|capfirst }}</strong></h5></th>
+
+                        <th><h5>Email: <strong>{{ object.email }}</strong></h5></th>
+                        <th>
+                            <a style="float:right; margin:5px;" class="btn btn-success" href="{% url 'edit user' pk=object.pk %}">Edit</a>
+                            <a style="float:right; margin:5px;" class="btn btn-danger" href="{% url 'delete user' pk=object.pk %}">Delete</a>
+                        </th>
+                    </tr>
+                </table>
+
+            </div>
+{% endblock %}

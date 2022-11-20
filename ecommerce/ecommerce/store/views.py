@@ -1,20 +1,33 @@
-
+from django.contrib.auth import get_user_model
 from django.shortcuts import render
-from django.views import generic as views
+
+from ecommerce.store.models import Product, Order, OrderItem
+
+UserModel = get_user_model()
+
+
+def store_view(request):
+    products = Product.objects.all()
+    context = {
+        'products': products
+    }
+    return render(request, 'store/store-page.html', context)
 
 
 
 
-class StoreView(views.TemplateView):
-    template_name = 'store/store-page.html'
-    extra_context = {}
+def checkout_view(request):
+    if request.user.is_authenticated:
+        customer = request.user
+        order, create = Order.objects.get_or_create(customer=customer, complete=False)
+        items = order.orderitem_set.all()
 
+    else:
+        items = []
+        order = {'get_cart_total': 0, 'get_cart_products': 0}
 
-class CartView(views.TemplateView):
-    template_name = 'store/cart-page.html'
-    extra_context = {}
-
-
-class CheckoutView(views.TemplateView):
-    template_name = 'store/checkout-page.html'
-    extra_context = {}
+    context = {
+        'items': items,
+        'order': order
+    }
+    return render(request, 'store/checkout-page.html', context)

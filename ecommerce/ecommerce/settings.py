@@ -95,6 +95,10 @@ STATICFILES_DIRS = (
     BASE_DIR / 'staticfiles',
 )
 
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = BASE_DIR / 'staticfiles/images'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.AppUser'

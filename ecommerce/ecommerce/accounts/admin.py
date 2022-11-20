@@ -8,8 +8,8 @@ UserModel = get_user_model()
 
 @admin.register(UserModel)
 class UserAdmin(auth_admin.UserAdmin):
-    form = UserEditForm
-    add_form = UserCreateForm
+    # form = UserEditForm
+    # add_form = UserCreateForm
 
     fieldsets = (
         (
@@ -18,6 +18,7 @@ class UserAdmin(auth_admin.UserAdmin):
                 'fields': (
                     'username',
                     'password',
+
                 ),
             }),
         (
@@ -53,5 +54,5 @@ class UserAdmin(auth_admin.UserAdmin):
         ),
     )
 
-    def get_form(self, request, obj=None, **kwargs):
-        return super().get_form(request, obj, **kwargs)
+    # def get_form(self, request, obj=None, **kwargs):
+    #     return super().get_form(request, obj, **kwargs)

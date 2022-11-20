@@ -26,9 +26,14 @@ class AppUser(auth_models.AbstractUser):
         )
     )
 
-
     email = models.EmailField(
         unique=True,
-        null=True,
+        null=False,
         blank=False,
     )
+
+    def get_full_name(self):
+        return f'{self.first_name} {self.last_name}'
+
+
+

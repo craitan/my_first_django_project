@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-    <title>Ecom</title>
+    <title>E-commerce</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
 
@@ -26,16 +26,37 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'store' %}">Store <span class="sr-only">(current)</span></a>
             </li>
-
         </ul>
-        <div class="form-inline my-2 my-lg-0">
-            <a href="#" class="btn btn-warning">Login</a>
+        <div>
 
-            <a href="{% url 'cart' %}">
-                <img id="cart-icon" src="{% static 'images/cart.png' %}">
-            </a>
-            <p id="cart-total">0</p>
+            {% if  request.user.is_authenticated %}
+                <div class="form-inline my-2 my-lg-0">
+                <!-- TODO: Have to fix this -->
 
+
+                    <a href="{% url 'details user' pk=request.user.pk %}" class="btn btn-primary">Profile</a>
+
+
+                    <a href="{% url 'logout user' %}" class="btn btn-warning">Log out:</a>
+
+                    <a href="{% url 'cart'  %}">
+                        <img id="cart-icon" src="{% static 'images/cart.png' %}">
+                    </a>
+                    <p id="cart-total">0</p>
+                </div>
+            {% else %}
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="{% url 'register user' %}" class="btn btn-success">Sign up</a>
+                    <a href="{% url 'login user' %}" class="btn btn-primary">Login</a>
+                    <!--- TODO: Have to check if i have to remove this cart img--->
+                    <a href="{% url 'cart' %}">
+                        <img id="cart-icon" src="{% static 'images/cart.png' %}">
+                    </a>
+                    <p id="cart-total">0</p>
+
+                </div>
+
+            {% endif %}
         </div>
     </div>
 </nav>
