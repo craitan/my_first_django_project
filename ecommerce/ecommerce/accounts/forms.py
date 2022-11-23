@@ -7,7 +7,7 @@ UserModel = get_user_model()
 class UserEditForm(auth_forms.UserChangeForm):
     class Meta:
         model = UserModel
-        fields = ('first_name',)
+        fields = ('password',)
         field_classes = {'username': auth_forms.UsernameField}
 
 

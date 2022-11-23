@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.core import validators
 from django.db import models
+from django.utils.text import slugify
 
 from ecommerce.accounts.models import AppUser
 
@@ -35,11 +36,17 @@ class Product(models.Model):
         blank=False,
     )
 
+    product_description = models.TextField(
+        null=False,
+        blank=False,
+    )
+
+
     def __str__(self):
         return self.product_name
 
 
-class Order(models.Model):
+class Cart(models.Model):
     customer = models.ForeignKey(
         AppUser,
         on_delete=models.CASCADE,
@@ -67,13 +74,13 @@ class Order(models.Model):
 
     @property
     def get_cart_total(self):
-        order_products = self.orderitem_set.all()
+        order_products = self.cartitem_set.all()
         total = sum([item.get_total_price() for item in order_products])
 
         return total
 
     def total_cart_products(self):
-        order_products = self.orderitem_set.all()
+        order_products = self.cartitem_set.all()
         total = sum([product.quantity for product in order_products])
         return total
 
@@ -81,31 +88,31 @@ class Order(models.Model):
         return str(self.id)
 
 
-class OrderItem(models.Model):
+class CartItem(models.Model):
     product = models.ForeignKey(
         Product,
         on_delete=models.CASCADE,
-        null=False,
-        blank=False,
+        null=True,
+        blank=True,
     )
 
-    order = models.ForeignKey(
-        Order,
+    cart = models.ForeignKey(
+        Cart,
         on_delete=models.CASCADE,
-        null=False,
-        blank=False,
+        null=True,
+        blank=True,
     )
 
     quantity = models.PositiveIntegerField(
-        default=0,
+        default=1,
         null=True,
         blank=True
     )
 
     date_added = models.DateField(
         auto_now_add=True,
-        null=False,
-        blank=False,
+        null=True,
+        blank=True,
     )
 
     def __str__(self):
@@ -128,7 +135,7 @@ class ShippingAddress(models.Model):
     )
 
     order = models.ForeignKey(
-        Order,
+        Cart,
         on_delete=models.CASCADE,
         null=False,
         blank=False,

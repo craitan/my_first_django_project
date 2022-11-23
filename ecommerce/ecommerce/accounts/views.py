@@ -1,11 +1,12 @@
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import mixins as auth_mixins
 from django.urls import reverse_lazy
 from django.views import generic as views
 from django.contrib.auth import views as auth_views, get_user_model
 from ecommerce.accounts.forms import UserCreateForm
-from ecommerce.store.models import Order, OrderItem
+from ecommerce.store.models import Cart, CartItem
 
 UserModel = get_user_model()
 
@@ -57,15 +58,12 @@ class UserDeleteView(views.DeleteView):
     success_url = reverse_lazy('store')
 
 
+# TODO: delete this if the other things workout
+@login_required
 def cart_view(request):
-    if request.user.is_authenticated:
-        customer = request.user
-        order, create = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
-
-    else:
-        items = []
-        order = {'get_cart_total': 0, 'get_cart_products': 0}
+    customer = request.user
+    order, create = Cart.objects.get_or_create(customer=customer, complete=False)
+    items = order.orderitem_set.all()
 
     context = {
         'items': items,

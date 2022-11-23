@@ -32,14 +32,9 @@
             {% if  request.user.is_authenticated %}
                 <div class="form-inline my-2 my-lg-0">
                 <!-- TODO: Have to fix this -->
-
-
                     <a href="{% url 'details user' pk=request.user.pk %}" class="btn btn-primary">Profile</a>
-
-
                     <a href="{% url 'logout user' %}" class="btn btn-warning">Log out:</a>
-
-                    <a href="{% url 'cart'  %}">
+                    <a href="{% url 'new cart' %}">
                         <img id="cart-icon" src="{% static 'images/cart.png' %}">
                     </a>
                     <p id="cart-total">0</p>
@@ -48,12 +43,6 @@
                 <div class="form-inline my-2 my-lg-0">
                     <a href="{% url 'register user' %}" class="btn btn-success">Sign up</a>
                     <a href="{% url 'login user' %}" class="btn btn-primary">Login</a>
-                    <!--- TODO: Have to check if i have to remove this cart img--->
-                    <a href="{% url 'cart' %}">
-                        <img id="cart-icon" src="{% static 'images/cart.png' %}">
-                    </a>
-                    <p id="cart-total">0</p>
-
                 </div>
 
             {% endif %}
