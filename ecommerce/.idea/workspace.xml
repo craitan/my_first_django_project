@@ -2,46 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0012_auto_20221122_1538.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0013_alter_orderitem_quantity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0014_product_slug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0015_alter_product_slug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0016_auto_20221122_1839.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0017_remove_product_slug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0018_product_product_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_tzsxixs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_wlKGvPR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/heaphones_CDuRCq9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_RKtQMF0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_gN0MuY8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_wPsWfPG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/shoe_zGj4xaK.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/watch_HxOlEa7.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart/add-to-cart-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/store/item-details-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0020_rename_order_shippingaddress_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0021_rename_cart_shippingaddress_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/validators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/cart-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/new-cart-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/add-to-cart-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/new-cart-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/new-cart-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/store/checkout-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/experiment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/item-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/item-details-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -227,7 +201,7 @@
       <workItem from="1669030198614" duration="743000" />
       <workItem from="1669030953875" duration="8637000" />
       <workItem from="1669117569807" duration="27727000" />
-      <workItem from="1669194052524" duration="3587000" />
+      <workItem from="1669194052524" duration="16274000" />
     </task>
     <servers />
   </component>

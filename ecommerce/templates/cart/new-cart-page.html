@@ -16,9 +16,7 @@
                         </th>
                     </tr>
                 </table>
-
             </div>
-
             <br>
             <div class="box-element">
                 <div class="cart-row">
@@ -27,7 +25,6 @@
                     <div style="flex:1"><strong>Price</strong></div>
                     <div style="flex:1"><strong>Quantity</strong></div>
                     <div style="flex:1"><strong>Total</strong></div>
-                    {#                    <div style="flex:1"><strong></strong></div>#}
                 </div>
                 {% for item in items %}
                     <div class="cart-row">
@@ -35,15 +32,13 @@
                         <div style="flex:2"><p>{{ item.product.product_name }}</p></div>
                         <div style="flex:1"><p>${{ item.product.product_price|floatformat:2 }}</p></div>
                         <div style="flex:1">
-
-                            <a class="btn btn-outline-danger" href="{% url 'update cart' pk=item.product.pk %}">-</a>
+                            <a class="btn btn-outline-danger" href="{% url 'remove from cart' pk=item.product.pk %}">-</a>
                             <p class="quantity">{{ item.quantity }}</p>
                             <div class="quantity">
-                            <a class="btn btn-outline-success" href="{% url 'update cart' pk=item.product.pk %}">+</a>
+                            <a class="btn btn-outline-success" href="{% url 'add to cart' pk=item.product.pk %}">+</a>
                             </div>
                         </div>
                         <div style="flex:1"><p>${{ item.get_total_price }}</p></div>
-
                     </div>
                 {% endfor %}
             </div>

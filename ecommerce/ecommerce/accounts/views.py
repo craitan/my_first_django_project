@@ -57,17 +57,3 @@ class UserDeleteView(views.DeleteView):
     model = UserModel
     success_url = reverse_lazy('store')
 
-
-# TODO: delete this if the other things workout
-@login_required
-def cart_view(request):
-    customer = request.user
-    order, create = Cart.objects.get_or_create(customer=customer, complete=False)
-    items = order.orderitem_set.all()
-
-    context = {
-        'items': items,
-        'order': order
-    }
-
-    return render(request, 'store/../../templates/accounts/cart-page.html', context)

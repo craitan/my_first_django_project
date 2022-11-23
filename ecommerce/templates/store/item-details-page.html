@@ -17,7 +17,7 @@
                             <h4 style="display: inline-block;">${{ items.product_price|floatformat:2 }}</h4>
                         </div>
                         <th>
-                            <a class="btn btn-outline-success" href="{% url 'update cart' pk=items.pk %}">Add to Cart</a>
+                            <a class="btn btn-outline-success" href="{% url 'add to cart' pk=items.pk %}">Add to Cart</a>
                         </th>
                     </div>
                 </table>
