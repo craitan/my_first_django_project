@@ -10,7 +10,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Cart)
 class CartAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'order_date', 'complete', 'order_transaction',)
+    list_display = ('id', 'customer', 'order_date', 'complete',)
 
 
 @admin.register(CartItem)

@@ -66,11 +66,7 @@ class Cart(models.Model):
         blank=False,
     )
 
-    order_transaction = models.CharField(
-        max_length=200,
-        null=False,
-        blank=False,
-    )
+
 
     @property
     def get_cart_total(self):

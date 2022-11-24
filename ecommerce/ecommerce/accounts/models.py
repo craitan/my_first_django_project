@@ -1,7 +1,7 @@
 from django.contrib.auth import models as auth_models
 from django.core import validators
 from django.db import models
-from ecommerce.accounts.validators import validate_letters_and_numbers
+from ecommerce.accounts.validators import validate_letters
 
 
 class AppUser(auth_models.AbstractUser):
@@ -14,7 +14,7 @@ class AppUser(auth_models.AbstractUser):
         max_length=MAX_LEN_FIRST_NAME,
         validators=(
             validators.MinLengthValidator(MIN_LEN_FIRST_NAME),
-            validate_letters_and_numbers,
+            validate_letters,
         )
     )
 
@@ -22,7 +22,7 @@ class AppUser(auth_models.AbstractUser):
         max_length=MAX_LEN_LAST_NAME,
         validators=(
             validators.MinLengthValidator(MIN_LEN_LAST_NAME),
-            validate_letters_and_numbers,
+            validate_letters,
         )
     )
 

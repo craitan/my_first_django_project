@@ -1,0 +1,39 @@
+{% extends 'base/base.html' %}
+{% block content %}
+        <div class="col-lg-6">
+            <div class="box-element" >
+                {% if user.is_staff %}
+                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Store Page</a>
+                {% else %}
+                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+                {% endif %}
+                <br>
+                <br>
+                <table class="table">
+
+                    <div class="col-lg-11">
+                        <center>
+                            <img class="thumbnail" src="{{ items.product_image.url }}">
+                            <div class="box-element product">
+                                <h6><strong>{{ product.product_name }}</strong></h6>
+                                <hr>
+                                <h6>{{ items.product_description }}</h6>
+                                <h4 style="display: inline-block;">${{ items.product_price|floatformat:2 }}</h4>
+                            </div>
+                            <th>
+                                {% if user.is_staff %}
+                                    <a class="btn btn-outline-success" href="{% url 'edit product' pk=items.pk %}">Edit
+                                        product</a>
+                                    <a class="btn btn-outline-danger" href="{% url 'delete product' pk=items.pk %}">Delete
+                                        product</a>
+                                {% else %}
+                                    <a class="btn btn-outline-success" href="{% url 'add to cart' pk=items.pk %}">Add to
+                                        Cart</a>
+                                {% endif %}
+                            </th>
+                        </center>
+                    </div>
+                </table>
+            </div>
+        </div>
+{% endblock %}

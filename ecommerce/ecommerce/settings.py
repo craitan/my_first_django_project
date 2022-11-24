@@ -8,7 +8,10 @@ SECRET_KEY = 'django-insecure-zjx^-@id-vfk2=7w_@fxru%_rk(04*f%y4n%04b354um-e5tth
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -96,9 +99,9 @@ STATICFILES_DIRS = (
     BASE_DIR / 'staticfiles',
 )
 
-MEDIA_URL = '/images/'
-
 MEDIA_ROOT = BASE_DIR / 'staticfiles/images'
+
+MEDIA_URL = '/images/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

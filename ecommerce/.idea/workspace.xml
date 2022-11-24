@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0020_rename_order_shippingaddress_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0021_rename_cart_shippingaddress_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/core/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0022_remove_cart_order_transaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/Book22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/Book22_SzNKBZN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/LSD-Molecule-T-Shirt-Black.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/LSD-Molecule-T-Shirt-Black_008pALY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_CGUF67P.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_pk5SjJw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/product-add-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/product-delete-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/product-details-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/store/product-edit-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/cart/utils.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cart/add-to-cart-page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cart/new-cart-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/new-cart-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/checkout-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/item-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/item-details-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/item-details-page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,29 +64,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Python projects/my_first_django_project/ecommerce",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python projects/my_first_django_project/t4t&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
@@ -201,7 +217,8 @@
       <workItem from="1669030198614" duration="743000" />
       <workItem from="1669030953875" duration="8637000" />
       <workItem from="1669117569807" duration="27727000" />
-      <workItem from="1669194052524" duration="16274000" />
+      <workItem from="1669194052524" duration="28227000" />
+      <workItem from="1669287236821" duration="9502000" />
     </task>
     <servers />
   </component>

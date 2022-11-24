@@ -1,36 +1,43 @@
+from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
-from ecommerce.store.forms import ShippingAddressForm
-from ecommerce.store.models import Product, Cart, CartItem
+from ecommerce.core.utils import get_item, get_or_create_cart
+from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm
+from ecommerce.store.models import Product
 
 UserModel = get_user_model()
 
 
 def store_view(request):
-    products = Product.objects.all()
+
+    products = Product.objects.order_by('product_name').all()
+
     context = {
         'products': products
     }
     return render(request, 'store/store-page.html', context)
 
+
 @login_required
 def checkout_view(request):
-    cart, create = Cart.objects.get_or_create(customer=request.user, complete=False)
+    cart, create = get_or_create_cart(request.user)
     items = cart.cartitem_set.all()
 
     if request.method == 'GET':
         form = ShippingAddressForm()
     else:
-        form = ShippingAddressForm()
+        form = ShippingAddressForm(request.POST)
         if form.is_valid():
             shipping = form.save(commit=False)
             shipping.customer = request.user
             shipping.order = cart
+            cart.complete = True
+            cart.save()
             shipping.save()
-            return redirect('store')
 
+            return redirect('store')
 
     context = {
 
@@ -41,9 +48,68 @@ def checkout_view(request):
     return render(request, 'store/checkout-page.html', context)
 
 
-def item_details_view(request, pk):
-    items = Product.objects.get(pk=pk)
+@staff_member_required
+def add_product(request):
+    if request.method == 'GET':
+        form = ProductCrateForm()
+    else:
+        form = ProductCrateForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.save()
+            return redirect('store')
+
     context = {
-        'items': items,
+        'form': form,
     }
-    return render(request, 'store/item-details-page.html', context)
+
+    return render(request, 'store/product-add-page.html', context)
+
+
+@login_required
+def details_product(request, pk):
+    item = get_item(pk)
+    context = {
+        'items': item,
+    }
+    return render(request, 'store/product-details-page.html', context)
+
+
+@staff_member_required
+def edit_product(request, pk):
+    item = get_item(pk)
+
+    if request.method == 'GET':
+        form = ProductEditForm(instance=item)
+    else:
+        form = ProductEditForm(request.POST, request.FILES, instance=item)
+        if form.is_valid():
+            form.save()
+            return redirect('details product', pk=pk)
+
+    context = {
+        'form': form,
+        'pk': pk,
+    }
+
+    return render(request, 'store/product-edit-page.html', context)
+
+
+@staff_member_required
+def delete_product(request, pk):
+    item = get_item(pk)
+
+    if request.method == 'GET':
+        form = ProductDeleteForm(instance=item)
+    else:
+        form = ProductDeleteForm(request.POST, instance=item)
+        if form.is_valid():
+            form.save()
+            return redirect('store')
+
+    context = {
+        'form': form,
+        'pk': pk,
+    }
+
+    return render(request, 'store/product-delete-page.html', context)
