@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="" />
+    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ecommerce/core/form_mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_gepRMh0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +193,9 @@
       <workItem from="1669117569807" duration="27727000" />
       <workItem from="1669194052524" duration="28227000" />
       <workItem from="1669287236821" duration="9502000" />
-      <workItem from="1669312632613" duration="433000" />
+      <workItem from="1669312632613" duration="1035000" />
+      <workItem from="1669382820493" duration="45000" />
+      <workItem from="1669388411880" duration="1147000" />
     </task>
     <servers />
   </component>

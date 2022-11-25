@@ -1,5 +1,6 @@
 from django import forms
 
+from ecommerce.core.form_mixins import DisabledFormMixin
 from ecommerce.store.models import ShippingAddress, Product
 
 
@@ -23,20 +24,14 @@ class ProductEditForm(ProductBaseForm):
     pass
 
 
-class ProductDeleteForm(forms.ModelForm):
-    class Meta:
-        model = Product
-        exclude = ('product_image',)
+class ProductDeleteForm(DisabledFormMixin, ProductBaseForm):
+    disabled_fields = ('product_name', 'product_price', 'product_description',)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.__set_disable_fields()
+        self._disabled_fields()
 
     def save(self, commit=True):
         if commit:
             self.instance.delete()
         return self.instance
-
-    def __set_disable_fields(self):
-        for _, field in self.fields.items():
-            field.widget.attrs['readonly'] = 'readonly'
