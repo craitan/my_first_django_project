@@ -1,8 +1,8 @@
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
-
 from ecommerce.core.utils import get_item, get_or_create_cart, get_total_items_count, get_total_items_price
 from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm
 from ecommerce.store.models import Product
@@ -11,11 +11,13 @@ UserModel = get_user_model()
 
 
 def store_view(request):
-
     products = Product.objects.order_by('product_name').all()
+    page = Paginator(products, 6)
+    page_list = request.GET.get('page')
+    page = page.get_page(page_list)
 
     context = {
-        'products': products
+        'page': page
     }
     return render(request, 'store/store-page.html', context)
 

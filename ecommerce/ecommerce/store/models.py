@@ -14,6 +14,7 @@ class Product(models.Model):
 
     product_name = models.CharField(
         max_length=MAX_LEN_PRODUCT_NAME,
+        unique=True,
         null=False,
         blank=False,
         validators=(
