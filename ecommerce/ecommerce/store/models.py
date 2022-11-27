@@ -41,7 +41,6 @@ class Product(models.Model):
         blank=False,
     )
 
-
     def __str__(self):
         return self.product_name
 
@@ -66,19 +65,12 @@ class Cart(models.Model):
         blank=False,
     )
 
-
-
-    @property
     def get_cart_total(self):
         order_products = self.cartitem_set.all()
         total = sum([item.get_total_price() for item in order_products])
 
         return total
 
-    def total_cart_products(self):
-        order_products = self.cartitem_set.all()
-        total = sum([product.quantity for product in order_products])
-        return total
 
     def __str__(self):
         return str(self.id)

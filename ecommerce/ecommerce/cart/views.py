@@ -1,16 +1,21 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_cart_item, get_cart
+from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_cart_item, get_cart, get_total_items_count, \
+    get_total_items_price
 
 
 @login_required
 def new_cart_view(request):
     cart, create = get_or_create_cart(request.user)
     items = cart.cartitem_set.order_by('product').all()
+    items_count = get_total_items_count(items)
+    items_price = get_total_items_price(items)
 
     context = {
         'items': items,
-        'cart': cart
+        'cart': cart,
+        'count': items_count,
+        'total_price': items_price,
     }
 
     return render(request, 'cart/new-cart-page.html', context)

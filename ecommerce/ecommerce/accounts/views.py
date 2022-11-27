@@ -17,15 +17,10 @@ class SignUpView(views.CreateView):
     success_url = reverse_lazy('store')
 
     # Auto sign in after registration
-    def form_valid(self, form):
-        form.save()
-        user = authenticate(
-            username=form.cleaned_data['username'],
-            password=form.cleaned_data['password1'],
-        )
-        login(self.request, user)
-
-        return redirect(self.success_url)
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        login(request, self.object)
+        return response
 
 
 class SignInView(auth_views.LoginView):
@@ -56,4 +51,3 @@ class UserDeleteView(views.DeleteView):
     template_name = 'accounts/profile-delete-page.html'
     model = UserModel
     success_url = reverse_lazy('store')
-

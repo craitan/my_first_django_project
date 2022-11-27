@@ -9,12 +9,12 @@
                 <br>
                 <table class="table">
                     <tr>
-                        <th><h5>Items: <strong>{{ cart.total_cart_products }}</strong></h5></th>
-                        <th><h5>Total:<strong> ${{ cart.get_cart_total|floatformat:2 }}</strong></h5></th>
-                        {% if cart.total_cart_products > 0 %}
-                        <th>
-                            <a style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
-                        </th>
+                        <th><h5>Items: <strong>{{ count }}</strong></h5></th>
+                        <th><h5>Total:<strong> ${{ total_price|floatformat:2 }}</strong></h5></th>
+                        {% if count > 0 %}
+                            <th>
+                                <a style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
+                            </th>
                         {% endif %}
                     </tr>
                 </table>
@@ -34,10 +34,12 @@
                         <div style="flex:2"><p>{{ item.product.product_name }}</p></div>
                         <div style="flex:1"><p>${{ item.product.product_price|floatformat:2 }}</p></div>
                         <div style="flex:1">
-                            <a class="btn btn-outline-danger" href="{% url 'remove from cart' pk=item.product.pk %}">-</a>
+                            <a class="btn btn-outline-danger"
+                               href="{% url 'remove from cart' pk=item.product.pk %}">-</a>
                             <p class="quantity">{{ item.quantity }}</p>
                             <div class="quantity">
-                            <a class="btn btn-outline-success" href="{% url 'add to cart' pk=item.product.pk %}">+</a>
+                                <a class="btn btn-outline-success"
+                                   href="{% url 'add to cart' pk=item.product.pk %}">+</a>
                             </div>
                         </div>
                         <div style="flex:1"><p>${{ item.get_total_price }}</p></div>

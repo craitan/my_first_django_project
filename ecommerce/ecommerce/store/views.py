@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
-from ecommerce.core.utils import get_item, get_or_create_cart
+from ecommerce.core.utils import get_item, get_or_create_cart, get_total_items_count, get_total_items_price
 from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm
 from ecommerce.store.models import Product
 
@@ -23,7 +23,9 @@ def store_view(request):
 @login_required
 def checkout_view(request):
     cart, create = get_or_create_cart(request.user)
-    items = cart.cartitem_set.all()
+    items = cart.cartitem_set.order_by('product').all()
+    items_count = get_total_items_count(items)
+    items_price = get_total_items_price(items)
 
     if request.method == 'GET':
         form = ShippingAddressForm()
@@ -44,6 +46,8 @@ def checkout_view(request):
         'items': items,
         'order': cart,
         'form': form,
+        'items_count': items_count,
+        'items_price': items_price,
     }
     return render(request, 'store/checkout-page.html', context)
 
