@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-zjx^-@id-vfk2=7w_@fxru%_rk(04*f%y4n%04b354um-e5tth'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -68,7 +68,7 @@ DATABASES = {
     },
 }
 if DEBUG:
-    pass
+    AUTH_PASSWORD_VALIDATORS = []
 else:
     AUTH_PASSWORD_VALIDATORS = [
         {
@@ -101,9 +101,10 @@ STATICFILES_DIRS = (
     BASE_DIR / 'staticfiles',
 )
 
-MEDIA_ROOT = BASE_DIR / 'staticfiles/images'
 
-MEDIA_URL = '/images/'
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

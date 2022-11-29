@@ -2,25 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0023_alter_product_product_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/Book22_ZyzQsIh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/Book22_ouHW7WL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/book_yjfR2BL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/heaphones_1y9o4Ce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/heaphones_T1EiFgq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_3QAjKL5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_LwxzDFv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_bthSOXx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_gvSTp2K.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/shoe_VJ1woJN.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/shoe_oSyUC3v.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/watch_5pKTUb9.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/watch_9YhEXgX.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/watch_H8vMFqM.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/image-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/images/right-shape.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/core/form_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/core/form_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/Book22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/Book22_SzNKBZN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/Book22_ZyzQsIh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/Book22_ouHW7WL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/LSD-Molecule-T-Shirt-Black.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/LSD-Molecule-T-Shirt-Black_008pALY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/arrow-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/arrow-up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_CGUF67P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_gepRMh0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_pk5SjJw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_tzsxixs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_wlKGvPR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/book_yjfR2BL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/heaphones.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/heaphones_1y9o4Ce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/heaphones_CDuRCq9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/heaphones_T1EiFgq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_3QAjKL5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_LwxzDFv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_RKtQMF0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_bthSOXx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_gN0MuY8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_gvSTp2K.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/pexels-photo-428340_wPsWfPG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/shoe.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/mediafiles/shoe.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/shoe_VJ1woJN.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/mediafiles/shoe_8e3fBKQ.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/shoe_oSyUC3v.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/shoe_zGj4xaK.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/watch.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/watch_5pKTUb9.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/watch_9YhEXgX.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/watch_H8vMFqM.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/watch_HxOlEa7.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +60,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,34 +80,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/PycharmProjects/petstagram-main/petstagram",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python projects/petstagram/petstagram&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\css" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\base" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.ecommerce">
@@ -215,7 +241,9 @@
       <workItem from="1669397039368" duration="762000" />
       <workItem from="1669468487398" duration="73000" />
       <workItem from="1669468571139" duration="967000" />
-      <workItem from="1669544673283" duration="11260000" />
+      <workItem from="1669544673283" duration="11603000" />
+      <workItem from="1669565857469" duration="620000" />
+      <workItem from="1669630236764" duration="6185000" />
     </task>
     <servers />
   </component>
