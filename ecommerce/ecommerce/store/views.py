@@ -22,36 +22,20 @@ def store_view(request):
     return render(request, 'store/store-page.html', context)
 
 
-@login_required
-def checkout_view(request):
-    cart, create = get_or_create_cart(request.user)
-    items = cart.cartitem_set.order_by('product').all()
-    items_count = get_total_items_count(items)
-    items_price = get_total_items_price(items)
+# TODO: Have to get second opinion for the search bar
+def search_bar_results(request):
+    if request.method == 'POST':
+        searched = request.POST['searched']
+        products = Product.objects.filter(product_name__icontains=searched)
+        page = Paginator(products, 6)
+        page_list = request.GET.get('page')
+        page = page.get_page(page_list)
 
-    if request.method == 'GET':
-        form = ShippingAddressForm()
-    else:
-        form = ShippingAddressForm(request.POST)
-        if form.is_valid():
-            shipping = form.save(commit=False)
-            shipping.customer = request.user
-            shipping.order = cart
-            cart.complete = True
-            cart.save()
-            shipping.save()
-
-            return redirect('store')
-
-    context = {
-
-        'items': items,
-        'order': cart,
-        'form': form,
-        'items_count': items_count,
-        'items_price': items_price,
-    }
-    return render(request, 'store/checkout-page.html', context)
+        context = {
+            'searched': searched,
+            'page': page
+        }
+        return render(request, 'store/search-bar-result.html', context)
 
 
 @staff_member_required
@@ -70,15 +54,6 @@ def add_product(request):
     }
 
     return render(request, 'store/product-add-page.html', context)
-
-
-@login_required
-def details_product(request, pk):
-    item = get_item(pk)
-    context = {
-        'items': item,
-    }
-    return render(request, 'store/product-details-page.html', context)
 
 
 @staff_member_required
@@ -119,3 +94,44 @@ def delete_product(request, pk):
     }
 
     return render(request, 'store/product-delete-page.html', context)
+
+
+@login_required
+def details_product(request, pk):
+    item = get_item(pk)
+    context = {
+        'items': item,
+    }
+    return render(request, 'store/product-details-page.html', context)
+
+
+@login_required
+def checkout_view(request):
+    cart, create = get_or_create_cart(request.user)
+    items = cart.cartitem_set.order_by('product').all()
+    items_count = get_total_items_count(items)
+    items_price = get_total_items_price(items)
+
+    if request.method == 'GET':
+        form = ShippingAddressForm()
+    else:
+        form = ShippingAddressForm(request.POST)
+        if form.is_valid():
+            shipping = form.save(commit=False)
+            shipping.customer = request.user
+            shipping.order = cart
+            cart.complete = True
+            cart.save()
+            shipping.save()
+
+            return redirect('store')
+
+    context = {
+
+        'items': items,
+        'order': cart,
+        'form': form,
+        'items_count': items_count,
+        'items_price': items_price,
+    }
+    return render(request, 'store/checkout-page.html', context)

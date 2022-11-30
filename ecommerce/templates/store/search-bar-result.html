@@ -1,0 +1,58 @@
+<!-- TODO: Have to get second opinion for the search bar -->
+{% extends 'base/base.html' %}
+{% block content %}
+
+    {% if searched %}
+        <div class="row">
+            {% for product in page.object_list %}
+
+                <div class="col-lg-4">
+                    <img class="thumbnail" src="{{ product.product_image.url }}">
+                    <div class="box-element product">
+                        <h6><strong>{{ product.product_name }}</strong></h6>
+                        <hr>
+                        {% if user.is_staff %}
+                            <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Edit
+                                product</a>
+                        {% else %}
+                            <a class="btn btn-outline-success"
+                               href="{% url 'details product' pk=product.pk %}">Details</a>
+                        {% endif %}
+                        <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to Cart</a>
+                        <h4 style="display: inline-block;float: right">${{ product.product_price|floatformat:2 }}</h4>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    {% if page.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link"
+                               href="{% url 'store' %}?page={{ page.previous_page_number }}">Previous</a>
+                        </li>
+                    {% endif %}
+                    {% for num_page in page.paginator.page_range %}
+                        {% if page.number == num_page %}
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="{% url 'store' %}?page={{ num_page }}">{{ num_page }}</a>
+                            </li>
+                        {% else %}
+                            <li class="page-item" aria-current="page">
+                                <a class="page-link" href="{% url 'store' %}?page={{ num_page }}">{{ num_page }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="{% url 'store' %}?page={{ page.next_page_number }}">Next</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+
+    {% endif %}
+
+{% endblock %}
