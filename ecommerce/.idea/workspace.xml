@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/27094176_-_huawei_watch_gt_3_42mm_leather_strap_-_sided.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/https___images.footlocker.com_is_image_EBFL2_421HK3BK_wid1920hei1080_640x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/pexels-photo-428340.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/s-l640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/shoe_jCJNOcb.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/email_templates/email-greeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +226,7 @@
       <workItem from="1669713692549" duration="683000" />
       <workItem from="1669733443590" duration="6682000" />
       <workItem from="1669799648034" duration="32000" />
-      <workItem from="1669799681463" duration="7003000" />
+      <workItem from="1669799681463" duration="7525000" />
     </task>
     <servers />
   </component>

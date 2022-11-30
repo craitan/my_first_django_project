@@ -16,6 +16,21 @@ class SignUpView(views.CreateView):
     form_class = UserCreateForm
     success_url = reverse_lazy('store')
 
+    # Auto sign in after registration
+    # def post(self, request, *args, **kwargs):
+    #     response = super().post(request, *args, **kwargs)
+    #     login(request, self.object)
+    #     return response
+
+    def form_valid(self, form):
+        form.save()
+        user = authenticate(
+            username=form.cleaned_data['username'],
+            password=form.cleaned_data['password1'],
+        )
+        login(self.request, user)
+
+        return redirect(self.success_url)
 
 
 class SignInView(auth_views.LoginView):
