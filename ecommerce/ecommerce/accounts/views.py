@@ -16,11 +16,6 @@ class SignUpView(views.CreateView):
     form_class = UserCreateForm
     success_url = reverse_lazy('store')
 
-    # Auto sign in after registration
-    def post(self, request, *args, **kwargs):
-        response = super().post(request, *args, **kwargs)
-        login(request, self.object)
-        return response
 
 
 class SignInView(auth_views.LoginView):

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="" />
+    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ecommerce/accounts/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediafiles/27094176_-_huawei_watch_gt_3_42mm_leather_strap_-_sided.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediafiles/https___images.footlocker.com_is_image_EBFL2_421HK3BK_wid1920hei1080_640x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediafiles/pexels-photo-428340.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediafiles/s-l640.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediafiles/shoe_jCJNOcb.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/email_templates/email-greeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,37 +46,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/PycharmProjects/basics and fundamentals projects/exercises",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python projects/my_first_django_project/ecommerce&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\email_templates" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\css" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.ecommerce">
+    <configuration name="eksperiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../PycharmProjects/basics and fundamentals projects/MyFirstProject" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../PycharmProjects/basics and fundamentals projects/MyFirstProject/eksperiment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,12 +191,14 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.ecommerce" />
+      <item itemvalue="Python.eksperiment" />
       <item itemvalue="Python.models" />
       <item itemvalue="Python.views" />
       <item itemvalue="Python.views (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.eksperiment" />
         <item itemvalue="Python.views (1)" />
         <item itemvalue="Python.models" />
         <item itemvalue="Python.views" />
@@ -198,11 +235,17 @@
       <workItem from="1669565857469" duration="620000" />
       <workItem from="1669630236764" duration="6185000" />
       <workItem from="1669713692549" duration="683000" />
+      <workItem from="1669733443590" duration="6682000" />
+      <workItem from="1669799648034" duration="32000" />
+      <workItem from="1669799681463" duration="7003000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -220,6 +263,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ecommerce$views.coverage" NAME="views Coverage Results" MODIFIED="1668883159920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce/accounts" />
+    <SUITE FILE_PATH="coverage/ecommerce$eksperiment.coverage" NAME="eksperiment Coverage Results" MODIFIED="1669799707773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../PycharmProjects/basics and fundamentals projects/MyFirstProject" />
     <SUITE FILE_PATH="coverage/ecommerce$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1669028028049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce/cart" />
     <SUITE FILE_PATH="coverage/ecommerce$models.coverage" NAME="models Coverage Results" MODIFIED="1668883254504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce/store" />
   </component>

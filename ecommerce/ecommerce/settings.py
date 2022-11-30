@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-zjx^-@id-vfk2=7w_@fxru%_rk(04*f%y4n%04b354um-e5tth'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -101,7 +101,6 @@ STATICFILES_DIRS = (
     BASE_DIR / 'staticfiles',
 )
 
-
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
@@ -109,5 +108,12 @@ MEDIA_ROOT = BASE_DIR / 'mediafiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.AppUser'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'info.project.ecommerce@gmail.com'
+EMAIL_HOST_PASSWORD = 'iveuryyuiuflqgvl'
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'info.project.ecommerce@gmail.com'
 
 LOGIN_REDIRECT_URL = reverse_lazy('store')

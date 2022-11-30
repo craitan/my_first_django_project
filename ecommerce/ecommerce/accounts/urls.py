@@ -13,3 +13,5 @@ urlpatterns = (
 
     ]))
 )
+
+from .signals import *

@@ -10,32 +10,29 @@
         <br>
         <br>
         <table class="table">
+            <tr><h5>User name: <strong>{{ user }}</strong></h5></tr>
+            <tr><h5>Email: <strong>{{ user.email }}</strong></h5></tr>
+            <tr><h5>First name: <strong>{{ user.first_name|capfirst }}</strong></h5></tr>
+            <tr><h5>Last name: <strong>{{ user.last_name|capfirst }}</strong></h5></tr>
             <tr>
-                <th><h5>User name: <strong>{{ object }}</strong></h5></th>
-                <th><h5>Email: <strong>{{ object.email }}</strong></h5></th>
-                <th><h5>First name: <strong>{{ object.first_name|capfirst }}</strong></h5></th>
-                <th><h5>Last name: <strong>{{ object.last_name|capfirst }}</strong></h5></th>
-                <th>
-                    <a style="float:right; margin:5px;" class="btn btn-success"
-                       href="{% url 'edit user' pk=object.pk %}">Edit</a>
-                    <a style="float:right; margin:5px;" class="btn btn-danger"
-                       href="{% url 'delete user' pk=object.pk %}">Delete</a>
-                </th>
+                <a style="float:left; margin:5px;" class="btn btn-success"
+                   href="{% url 'edit user' pk=user.pk %}">Edit</a>
+                <a style="float:left; margin:5px;" class="btn btn-danger"
+                   href="{% url 'delete user' pk=user.pk %}">Delete</a>
             </tr>
         </table>
-
     </div>
     <hr>
     {% if user.is_staff %}
-    <div class="box-element">
-        <table>
-            <th>
-                <a style="float:right; margin:5px;" class="btn btn-warning"
-                   href="{% url 'store'%}">Edit product</a>
-                <a style="float:right; margin:5px;" class="btn btn-success"
-                   href="{% url 'add product' %}">Add products</a>
-            </th>
-        </table>
-    </div>
+        <div class="box-element">
+            <table>
+                <th>
+                    <a style="float:right; margin:5px;" class="btn btn-warning"
+                       href="{% url 'store' %}">Edit product</a>
+                    <a style="float:right; margin:5px;" class="btn btn-success"
+                       href="{% url 'add product' %}">Add products</a>
+                </th>
+            </table>
+        </div>
     {% endif %}
 {% endblock %}
