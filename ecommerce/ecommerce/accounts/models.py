@@ -15,7 +15,8 @@ class AppUser(auth_models.AbstractUser):
         validators=(
             validators.MinLengthValidator(MIN_LEN_FIRST_NAME),
             validate_letters,
-        )
+        ),
+        blank=True,
     )
 
     last_name = models.CharField(
@@ -23,7 +24,8 @@ class AppUser(auth_models.AbstractUser):
         validators=(
             validators.MinLengthValidator(MIN_LEN_LAST_NAME),
             validate_letters,
-        )
+        ),
+        blank=True,
     )
 
     email = models.EmailField(
@@ -34,6 +36,3 @@ class AppUser(auth_models.AbstractUser):
 
     def get_full_name(self):
         return f'{self.first_name} {self.last_name}'
-
-
-

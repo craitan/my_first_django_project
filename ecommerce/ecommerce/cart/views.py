@@ -9,13 +9,12 @@ def new_cart_view(request):
     cart, create = get_or_create_cart(request.user)
     items = cart.cartitem_set.order_by('product').all()
     items_count = get_total_items_count(items)
-    items_price = get_total_items_price(items)
-
+    total_price = get_total_items_price(items)
     context = {
         'items': items,
         'cart': cart,
         'count': items_count,
-        'total_price': items_price,
+        'total_price': total_price,
     }
 
     return render(request, 'cart/new-cart-page.html', context)
@@ -29,7 +28,7 @@ def add_to_cart(request, pk):
 
     if not created:
         cart_item.quantity += 1
-        cart_item.save(force_update=True, update_fields=['quantity'])
+        cart_item.save()
 
     return redirect('new cart')
 
@@ -41,7 +40,7 @@ def remove_from_cart(request, pk):
 
     if not created:
         cart_item.quantity -= 1
-        cart_item.save(force_update=True, update_fields=['quantity'])
+        cart_item.save()
         if cart_item.quantity == 0:
             cart_item.delete()
 
