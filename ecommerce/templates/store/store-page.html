@@ -10,11 +10,13 @@
                     <h6><strong>{{ product.product_name }}</strong></h6>
                     <hr>
                     {% if user.is_staff %}
-                        <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Edit product</a>
+                        <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Edit
+                            product</a>
                     {% else %}
-                    <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Details</a>
+                        <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to Cart</a>
+                        <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Details</a>
                     {% endif %}
-                    <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to Cart</a>
+
                     <h4 style="display: inline-block;float: right">${{ product.product_price|floatformat:2 }}</h4>
                 </div>
             </div>

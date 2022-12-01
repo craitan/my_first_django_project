@@ -12,7 +12,7 @@ UserModel = get_user_model()
 
 def store_view(request):
     products = Product.objects.order_by('product_name').all()
-    page = Paginator(products, 6)
+    page = Paginator(products, 3)
     page_list = request.GET.get('page')
     page = page.get_page(page_list)
 
