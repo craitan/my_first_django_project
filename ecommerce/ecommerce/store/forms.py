@@ -4,12 +4,6 @@ from ecommerce.core.form_mixins import DisabledFormMixin
 from ecommerce.store.models import ShippingAddress, Product
 
 
-class ShippingAddressForm(forms.ModelForm):
-    class Meta:
-        model = ShippingAddress
-        exclude = ('date_added', 'order', 'customer')
-
-
 class ProductBaseForm(forms.ModelForm):
     class Meta:
         model = Product
@@ -35,3 +29,9 @@ class ProductDeleteForm(DisabledFormMixin, ProductBaseForm):
         if commit:
             self.instance.delete()
         return self.instance
+
+
+class ShippingAddressForm(forms.ModelForm):
+    class Meta:
+        model = ShippingAddress
+        exclude = ('date_added', 'order', 'customer')

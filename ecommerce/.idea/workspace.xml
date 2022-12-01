@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +232,7 @@
       <workItem from="1669733443590" duration="6682000" />
       <workItem from="1669799648034" duration="32000" />
       <workItem from="1669799681463" duration="15462000" />
-      <workItem from="1669907677162" duration="3993000" />
+      <workItem from="1669907677162" duration="5894000" />
     </task>
     <servers />
   </component>

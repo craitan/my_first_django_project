@@ -4,6 +4,7 @@ from django.db import models
 from django.utils.text import slugify
 
 from ecommerce.accounts.models import AppUser
+from ecommerce.accounts.validators import validate_letters
 
 UserModel = get_user_model()
 
@@ -115,7 +116,10 @@ class CartItem(models.Model):
 class ShippingAddress(models.Model):
     ADDRESS_MAX_LEN = 100
     ZIP_CODE_LEN = 4
-
+    MIN_LEN_FIRST_NAME = 2
+    MAX_LEN_FIRST_NAME = 20
+    MIN_LEN_LAST_NAME = 2
+    MAX_LEN_LAST_NAME = 20
     customer = models.ForeignKey(
         AppUser,
         on_delete=models.CASCADE,
@@ -150,6 +154,26 @@ class ShippingAddress(models.Model):
 
     date_added = models.DateField(
         auto_now_add=True,
+        null=False,
+        blank=False,
+    )
+
+    first_name = models.CharField(
+        max_length=MAX_LEN_FIRST_NAME,
+        validators=(
+            validators.MinLengthValidator(MIN_LEN_FIRST_NAME),
+            validate_letters,
+        ),
+        null=False,
+        blank=False,
+    )
+
+    last_name = models.CharField(
+        max_length=MAX_LEN_LAST_NAME,
+        validators=(
+            validators.MinLengthValidator(MIN_LEN_LAST_NAME),
+            validate_letters,
+        ),
         null=False,
         blank=False,
     )

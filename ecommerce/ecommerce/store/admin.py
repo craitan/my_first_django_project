@@ -20,4 +20,4 @@ class CartItemAdmin(admin.ModelAdmin):
 
 @admin.register(ShippingAddress)
 class ShippingAddressAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'order', 'address', 'city', 'zipcode', 'date_added')
+    list_display = ('customer', 'order', 'date_added')
