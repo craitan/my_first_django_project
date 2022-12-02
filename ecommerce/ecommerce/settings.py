@@ -67,6 +67,7 @@ DATABASES = {
         'PORT': '5432',
     },
 }
+
 if DEBUG:
     AUTH_PASSWORD_VALIDATORS = []
 else:
