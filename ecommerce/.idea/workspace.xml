@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0026_contactus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0027_contactus_massage_checked.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0028_remove_contactus_customer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0029_contactus_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/heaphones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediafiles/pexels-photo-428340_Hs24CSL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart/old-carts-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/store/contact-us-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/checkout-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/search-bar-result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/search-bar-result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/old-carts-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/old-carts-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +237,7 @@
       <workItem from="1669971057060" duration="5178000" />
       <workItem from="1669986603215" duration="395000" />
       <workItem from="1669987064782" duration="583000" />
-      <workItem from="1669988453866" duration="8661000" />
+      <workItem from="1669988453866" duration="11230000" />
     </task>
     <servers />
   </component>
