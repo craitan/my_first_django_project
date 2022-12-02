@@ -1,12 +1,10 @@
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.contrib.auth import mixins as auth_mixins
 from django.urls import reverse_lazy
 from django.views import generic as views
 from django.contrib.auth import views as auth_views, get_user_model
 from ecommerce.accounts.forms import UserCreateForm
-from ecommerce.store.models import Cart, CartItem
 
 UserModel = get_user_model()
 

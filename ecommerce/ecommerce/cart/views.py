@@ -2,6 +2,17 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_cart_item, get_cart, get_total_items_count, \
     get_total_items_price
+from ecommerce.store.models import Cart
+
+
+def old_carts_view(request):
+    user = request.user
+    carts = Cart.objects.filter(customer=user, complete=True)
+
+    context = {
+       'carts': carts
+    }
+    return render(request, 'cart/old-carts-page.html', context)
 
 
 @login_required

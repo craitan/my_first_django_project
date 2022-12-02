@@ -1,7 +1,7 @@
 from django import forms
 
 from ecommerce.core.form_mixins import DisabledFormMixin
-from ecommerce.store.models import ShippingAddress, Product
+from ecommerce.store.models import ShippingAddress, Product, ContactUs
 
 
 class ProductBaseForm(forms.ModelForm):
@@ -35,3 +35,9 @@ class ShippingAddressForm(forms.ModelForm):
     class Meta:
         model = ShippingAddress
         exclude = ('date_added', 'order', 'customer')
+
+
+class ContactUsForm(forms.ModelForm):
+    class Meta:
+        model = ContactUs
+        exclude = ('massage_checked',)

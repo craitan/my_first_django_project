@@ -1,9 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.core import validators
 from django.db import models
-from django.utils.text import slugify
 
-from ecommerce.accounts.models import AppUser
 from ecommerce.accounts.validators import validate_letters
 
 UserModel = get_user_model()
@@ -49,7 +47,7 @@ class Product(models.Model):
 
 class Cart(models.Model):
     customer = models.ForeignKey(
-        AppUser,
+        UserModel,
         on_delete=models.CASCADE,
         null=False,
         blank=False,
@@ -72,7 +70,6 @@ class Cart(models.Model):
         total = sum([item.get_total_price() for item in order_products])
 
         return total
-
 
     def __str__(self):
         return str(self.id)
@@ -121,7 +118,7 @@ class ShippingAddress(models.Model):
     MIN_LEN_LAST_NAME = 2
     MAX_LEN_LAST_NAME = 20
     customer = models.ForeignKey(
-        AppUser,
+        UserModel,
         on_delete=models.CASCADE,
         null=False,
         blank=False,
@@ -174,6 +171,57 @@ class ShippingAddress(models.Model):
             validators.MinLengthValidator(MIN_LEN_LAST_NAME),
             validate_letters,
         ),
+        null=False,
+        blank=False,
+    )
+
+
+class ContactUs(models.Model):
+    MIN_LEN_FIRST_NAME = 2
+    MAX_LEN_FIRST_NAME = 20
+    MIN_LEN_LAST_NAME = 2
+    MAX_LEN_LAST_NAME = 20
+
+
+    date_added = models.DateField(
+        auto_now_add=True,
+        null=False,
+        blank=False,
+    )
+
+    first_name = models.CharField(
+        max_length=MAX_LEN_FIRST_NAME,
+        validators=(
+            validators.MinLengthValidator(MIN_LEN_FIRST_NAME),
+            validate_letters,
+        ),
+        null=False,
+        blank=False,
+    )
+
+    last_name = models.CharField(
+        max_length=MAX_LEN_LAST_NAME,
+        validators=(
+            validators.MinLengthValidator(MIN_LEN_LAST_NAME),
+            validate_letters,
+        ),
+        null=False,
+        blank=False,
+    )
+
+    email = models.EmailField(
+        null=False,
+        blank=False,
+    )
+
+    massage = models.TextField(
+        max_length=250,
+        null=False,
+        blank=False,
+    )
+
+    massage_checked = models.BooleanField(
+        default=False,
         null=False,
         blank=False,
     )

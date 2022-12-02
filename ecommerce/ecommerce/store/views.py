@@ -1,13 +1,11 @@
 from django.contrib.admin.views.decorators import staff_member_required
-from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from ecommerce.core.utils import get_item, get_or_create_cart, get_total_items_count, get_total_items_price
-from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm
+from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm, \
+    ContactUsForm
 from ecommerce.store.models import Product
-
-UserModel = get_user_model()
 
 
 def store_view(request):
@@ -22,12 +20,11 @@ def store_view(request):
     return render(request, 'store/store-page.html', context)
 
 
-# TODO: Have to get second opinion for the search bar
 def search_bar_results(request):
     if request.method == 'POST':
         searched = request.POST['searched']
         products = Product.objects.filter(product_name__icontains=searched)
-        page = Paginator(products, 6)
+        page = Paginator(products, 3)
         page_list = request.GET.get('page')
         page = page.get_page(page_list)
 
@@ -135,3 +132,18 @@ def checkout_view(request):
         'items_price': items_price,
     }
     return render(request, 'store/checkout-page.html', context)
+
+
+def contact_us(request):
+    if request.method == 'GET':
+        form = ContactUsForm()
+    else:
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('store')
+
+    context = {
+        'form': form,
+    }
+    return render(request, 'store/contact-us-page.html', context)

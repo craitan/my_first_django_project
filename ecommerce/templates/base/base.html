@@ -24,12 +24,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <div>
-        <form class="d-flex" role="search" method="post" action="{% url 'searched result' %}">
-            {% csrf_token %}
-        <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search" name="searched">
-        <button class="btn btn-success" type="submit" name="">Search</button>
-      </form>
-    </div>
+                <form class="d-flex" role="search" method="post" action="{% url 'searched result' %}">
+                    {% csrf_token %}
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search"
+                           name="searched">
+                    <button class="btn btn-success" type="submit" name="">Search</button>
+                </form>
+            </div>
         </ul>
 
         <div>
@@ -38,9 +39,11 @@
                 <div class="form-inline my-2 my-lg-0">
                     <a href="{% url 'details user' pk=request.user.pk %}" class="btn btn-primary">Profile</a>
                     <a href="{% url 'logout user' %}" class="btn btn-warning">Log out:</a>
-                    <a href="{% url 'new cart' %}">
-                        <img id="cart-icon" src="{% static 'images/cart.png' %}">
-                    </a>
+                    {% if not request.user.is_staff %}
+                        <a href="{% url 'new cart' %}">
+                            <img id="cart-icon" src="{% static 'images/cart.png' %}">
+                        </a>
+                    {% endif %}
                 </div>
             {% else %}
                 <div class="form-inline my-2 my-lg-0">
@@ -61,7 +64,12 @@
     {% endblock content %}
 </div>
 
+<div class="footer">
+        <a href="{% url 'contact us' %}" class="footer">
+            Contact Us
+        </a>
 
+</div>
 </body>
 </html>
 
