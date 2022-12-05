@@ -110,13 +110,14 @@ class CartItem(models.Model):
         return total
 
 
-class ShippingAddress(models.Model):
+class ShippingInfo(models.Model):
     ADDRESS_MAX_LEN = 100
     ZIP_CODE_LEN = 4
     MIN_LEN_FIRST_NAME = 2
     MAX_LEN_FIRST_NAME = 20
     MIN_LEN_LAST_NAME = 2
     MAX_LEN_LAST_NAME = 20
+
     customer = models.ForeignKey(
         UserModel,
         on_delete=models.CASCADE,
@@ -124,7 +125,7 @@ class ShippingAddress(models.Model):
         blank=False,
     )
 
-    order = models.ForeignKey(
+    cart = models.ForeignKey(
         Cart,
         on_delete=models.CASCADE,
         null=False,
@@ -181,7 +182,6 @@ class ContactUs(models.Model):
     MAX_LEN_FIRST_NAME = 20
     MIN_LEN_LAST_NAME = 2
     MAX_LEN_LAST_NAME = 20
-
 
     date_added = models.DateField(
         auto_now_add=True,

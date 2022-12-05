@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from ecommerce.store.models import Product, Cart, CartItem, ShippingAddress, ContactUs
+from ecommerce.store.models import Product, Cart, CartItem, ShippingInfo, ContactUs
 
 
 @admin.register(Product)
@@ -18,9 +18,9 @@ class CartItemAdmin(admin.ModelAdmin):
     list_display = ('product', 'cart', 'quantity', 'date_added')
 
 
-@admin.register(ShippingAddress)
+@admin.register(ShippingInfo)
 class ShippingAddressAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'order', 'date_added')
+    list_display = ('customer', 'cart', 'date_added')
 
 
 @admin.register(ContactUs)

@@ -2,24 +2,10 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_cart_item, get_cart, get_total_items_count, \
     get_total_items_price
-from ecommerce.store.models import Cart
-
-#TODO: fix competed orders or remove it
-def old_carts_view(request):
-    user = request.user
-    carts = Cart.objects.filter(customer=user, complete=True).all()
-
-    for cart in carts:
-        items = cart.cartitem_set.all()
 
 
-        context = {
-            'carts': carts,
-            'items': items,
 
-        }
 
-        return render(request, 'cart/old-carts-page.html', context)
 
 
 @login_required
