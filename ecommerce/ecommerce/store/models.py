@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.core import validators
 from django.db import models
 
-from ecommerce.accounts.validators import validate_letters
+from ecommerce.core.validators import validate_letters
 
 UserModel = get_user_model()
 

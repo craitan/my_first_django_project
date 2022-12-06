@@ -2,7 +2,7 @@
 
 import django.core.validators
 from django.db import migrations, models
-import ecommerce.accounts.validators
+import ecommerce.core.validators
 
 
 class Migration(migrations.Migration):
@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='appuser',
             name='first_name',
-            field=models.CharField(blank=True, max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.accounts.validators.validate_letters]),
+            field=models.CharField(blank=True, max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.core.validators.validate_letters]),
         ),
     ]

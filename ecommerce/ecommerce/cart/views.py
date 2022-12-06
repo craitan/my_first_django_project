@@ -5,9 +5,6 @@ from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_car
 
 
 
-
-
-
 @login_required
 def new_cart_view(request):
     cart, create = get_or_create_cart(request.user)

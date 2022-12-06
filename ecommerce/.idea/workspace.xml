@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/migrations/0007_alter_appuser_last_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0007_alter_appuser_last_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/migrations/0008_alter_appuser_first_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0008_alter_appuser_first_name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/migrations/0009_alter_appuser_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/migrations/0009_alter_appuser_username.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/core/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/migrations/0024_auto_20221201_1856.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0024_auto_20221201_1856.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/migrations/0025_auto_20221201_1857.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0025_auto_20221201_1857.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/migrations/0026_contactus.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0026_contactus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +69,11 @@
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\email_templates" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\css" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.ecommerce">
@@ -242,7 +250,7 @@
       <workItem from="1670314485361" duration="676000" />
       <workItem from="1670316321426" duration="563000" />
       <workItem from="1670335084589" duration="704000" />
-      <workItem from="1670337405570" duration="922000" />
+      <workItem from="1670337405570" duration="2384000" />
     </task>
     <servers />
   </component>

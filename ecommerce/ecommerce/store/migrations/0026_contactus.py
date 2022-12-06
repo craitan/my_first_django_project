@@ -4,7 +4,7 @@ from django.conf import settings
 import django.core.validators
 from django.db import migrations, models
 import django.db.models.deletion
-import ecommerce.accounts.validators
+import ecommerce.core.validators
 
 
 class Migration(migrations.Migration):
@@ -20,8 +20,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('date_added', models.DateField(auto_now_add=True)),
-                ('first_name', models.CharField(max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.accounts.validators.validate_letters])),
-                ('last_name', models.CharField(max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.accounts.validators.validate_letters])),
+                ('first_name', models.CharField(max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.core.validators.validate_letters])),
+                ('last_name', models.CharField(max_length=20, validators=[django.core.validators.MinLengthValidator(2), ecommerce.core.validators.validate_letters])),
                 ('massage', models.TextField(max_length=250)),
                 ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],

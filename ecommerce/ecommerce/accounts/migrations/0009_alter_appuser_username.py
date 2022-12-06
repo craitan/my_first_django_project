@@ -2,7 +2,7 @@
 
 import django.core.validators
 from django.db import migrations, models
-import ecommerce.accounts.validators
+import ecommerce.core.validators
 
 
 class Migration(migrations.Migration):
@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='appuser',
             name='username',
-            field=models.CharField(error_messages={'max_length': 'Username must be a maximum of 20 characters.', 'min_length': 'Username must be at least 2 characters long.'}, max_length=20, unique=True, validators=[django.core.validators.MinLengthValidator(2), ecommerce.accounts.validators.username_validator]),
+            field=models.CharField(error_messages={'max_length': 'Username must be a maximum of 20 characters.', 'min_length': 'Username must be at least 2 characters long.'}, max_length=20, unique=True, validators=[django.core.validators.MinLengthValidator(2), ecommerce.core.validators.username_validator]),
         ),
     ]
