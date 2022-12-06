@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="" />
+    <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/accounts/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/validators.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -236,7 +241,8 @@
       <workItem from="1670248538254" duration="6398000" />
       <workItem from="1670314485361" duration="676000" />
       <workItem from="1670316321426" duration="563000" />
-      <workItem from="1670335084589" duration="703000" />
+      <workItem from="1670335084589" duration="704000" />
+      <workItem from="1670337405570" duration="922000" />
     </task>
     <servers />
   </component>

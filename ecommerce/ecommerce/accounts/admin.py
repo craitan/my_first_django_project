@@ -1,14 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth import admin as auth_admin, get_user_model
 
-
-
 UserModel = get_user_model()
 
 
 @admin.register(UserModel)
 class UserAdmin(auth_admin.UserAdmin):
-
     fieldsets = (
         (
             None,
@@ -51,3 +48,6 @@ class UserAdmin(auth_admin.UserAdmin):
             },
         ),
     )
+
+    def get_form(self, request, obj=None, **kwargs):
+        return super().get_form(request, obj, **kwargs)
