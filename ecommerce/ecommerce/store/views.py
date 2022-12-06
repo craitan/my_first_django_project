@@ -93,7 +93,6 @@ def delete_product(request, pk):
     return render(request, 'store/product-delete-page.html', context)
 
 
-@login_required
 def details_product(request, pk):
     item = get_item(pk)
     context = {
