@@ -6,11 +6,15 @@ from ecommerce.core.form_mixins import RemoveLabelsMixin, AddPlaceholdersMixin
 UserModel = get_user_model()
 
 
-class UserEditForm(RemoveLabelsMixin, AddPlaceholdersMixin,auth_forms.UserChangeForm):
+class UserEditForm(RemoveLabelsMixin, AddPlaceholdersMixin, forms.ModelForm):
     class Meta:
         model = UserModel
-        fields = ('password',)
-        field_classes = {'username': auth_forms.UsernameField}
+        fields = ('first_name', 'last_name', 'email',)
+        labels = {
+            'first_name': 'First Name',
+            'last_name': 'Last Name',
+            'email': 'Email',
+        }
 
 
 class UserCreate(RemoveLabelsMixin, AddPlaceholdersMixin, auth_forms.UserCreationForm):

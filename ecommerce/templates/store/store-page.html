@@ -10,7 +10,7 @@
                     <hr>
                     {% if user.is_staff %}
                         <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Edit
-                            product</a>
+                            Product</a>
                     {% else %}
                         <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to Cart</a>
                         <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Details</a>

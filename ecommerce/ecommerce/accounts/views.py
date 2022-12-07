@@ -42,7 +42,7 @@ class UserDetailsView(auth_mixins.LoginRequiredMixin, views.DetailView):
 class UserEditView(auth_mixins.LoginRequiredMixin, views.UpdateView):
     template_name = 'accounts/profile-edit-page.html'
     model = UserModel
-    fields = ('first_name', 'last_name', 'email',)
+    form_class = UserEditForm
 
 
     def get_success_url(self):

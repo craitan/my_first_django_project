@@ -23,9 +23,9 @@
                             <th>
                                 {% if user.is_staff %}
                                     <a class="btn btn-outline-success" href="{% url 'edit product' pk=items.pk %}">Edit
-                                        product</a>
+                                        Product</a>
                                     <a class="btn btn-outline-danger" href="{% url 'delete product' pk=items.pk %}">Delete
-                                        product</a>
+                                        Product</a>
                                 {% else %}
                                     <a class="btn btn-outline-success" href="{% url 'add to cart' pk=items.pk %}">Add to
                                         Cart</a>

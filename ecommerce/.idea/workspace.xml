@@ -5,23 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0032_contactus_subject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0033_alter_contactus_subject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/core/form_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/core/form_mixins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfiles/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/image-left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/images/right-shape.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accounts/login-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/login-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/register-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/register-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/checkout-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/product-add-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-add-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/product-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-delete-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/product-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-details-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/product-edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-edit-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/my/Desktop/django-wonderlanders-project-main",
+    "last_opened_file_path": "D:/Python projects/my_first_django_project/ecommerce/staticfiles/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,13 +80,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\email_templates" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates" />
     </key>
   </component>
@@ -265,7 +267,7 @@
       <workItem from="1670335084589" duration="704000" />
       <workItem from="1670337405570" duration="2384000" />
       <workItem from="1670409609188" duration="449000" />
-      <workItem from="1670410069966" duration="11007000" />
+      <workItem from="1670410069966" duration="17199000" />
     </task>
     <servers />
   </component>

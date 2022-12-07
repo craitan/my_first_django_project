@@ -2,13 +2,16 @@
 {% block content %}
     <div id="shipping-info">
         <form method="post" action="{% url 'delete user' pk=object.pk %}">
+            <a class="btn btn-outline-dark" href="{% url 'details user' pk=user.pk %}">&#x2190; Back to Profile</a>
             <hr>
             <center><h1>Are you sure you want to delete your profile ?</h1></center>
             <hr>
             <section class="changelist-form-container">
                 {{ form.as_p }}
                 {% csrf_token %}
-                <input id="form-button" class="btn btn-outline-danger btn-block" type="submit" value="Delete">
+
+                <button id="form-button" class="btn btn-danger btn-primary" type="submit" value="Register">Delete Profile
+                </button>
 
             </section>
         </form>

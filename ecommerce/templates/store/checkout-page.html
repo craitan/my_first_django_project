@@ -5,10 +5,10 @@
         <div class="col-lg-6">
             <div class="box-element" id="form-wrapper">
                 <form method="post" action="{% url 'checkout' %}">
-                    {{ form }}
+                    {{ form.as_p }}
                     {% csrf_token %}
                     <hr>
-                    <input id="form-button" class="btn btn-success btn-block" type="submit" value="Finish">
+                    <input id="form-button" class="btn btn-outline-success" type="submit" value="Finish">
                 </form>
             </div>
 

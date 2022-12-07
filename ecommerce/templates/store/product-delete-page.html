@@ -2,13 +2,14 @@
 {% block content %}
     <div id="shipping-info">
         <form enctype="multipart/form-data" method="post" action="{% url 'delete product' pk=pk %}">
+            <a class="btn btn-outline-dark" href="{% url 'details product' pk=pk %}">&#x2190; Back to Product</a>
             <hr>
             <h2>Delete product.</h2>
             <hr>
             <section class="changelist-form-container">
                 {{ form.as_p }}
                 {% csrf_token %}
-                <input id="form-button" class="btn btn-danger btn-block" type="submit" value="Delete product">
+                <input id="form-button" class="btn btn-danger" type="submit" value="Delete product">
             </section>
         </form>
     </div>

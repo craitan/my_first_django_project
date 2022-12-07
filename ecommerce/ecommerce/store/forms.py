@@ -4,7 +4,7 @@ from ecommerce.core.form_mixins import DisabledFormMixin, RemoveLabelsMixin, Add
 from ecommerce.store.models import ShippingInfo, Product, ContactUs
 
 
-class ProductBaseForm(forms.ModelForm):
+class ProductBaseForm(RemoveLabelsMixin, AddPlaceholdersMixin, forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
@@ -15,8 +15,7 @@ class ProductCrateForm(ProductBaseForm):
 
 
 class ProductEditForm(ProductBaseForm):
-   pass
-
+    pass
 
 
 class ProductDeleteForm(DisabledFormMixin, ProductBaseForm):
@@ -32,10 +31,10 @@ class ProductDeleteForm(DisabledFormMixin, ProductBaseForm):
         return self.instance
 
 
-class ShippingAddressForm(forms.ModelForm):
+class ShippingAddressForm(RemoveLabelsMixin,AddPlaceholdersMixin,forms.ModelForm):
     class Meta:
         model = ShippingInfo
-        exclude = ('date_added', 'order', 'customer')
+        exclude = ('date_added', 'cart', 'customer')
 
 
 class ContactUsForm(RemoveLabelsMixin, AddPlaceholdersMixin, forms.ModelForm):
