@@ -1,15 +1,15 @@
 {% extends 'base/base.html' %}
 {% block content %}
-    <div>
+    <div class="row">
         <form method="post" action="{% url 'login user' %}">
-            <hr>
-            <center><strong>Log in:</strong></center>
+            <h3>Log in:</h3>
             <hr>
             <section class="changelist-form-container">
-                <center>{{ form.as_p }}</center>
+                {{ form.as_p }}
                 {% csrf_token %}
-                <input id="form-button" class="btn btn-success btn-block" type="submit" value="Log in">
-
+                <button id="form-button" class="btn  btn-primary"  type="submit" value="Log in">Log in</button>
+            <hr>
+                <h6>Don't have an account? <a href="{% url 'register user' %}">Register</a></h6>
             </section>
         </form>
     </div>

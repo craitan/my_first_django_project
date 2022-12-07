@@ -4,14 +4,14 @@ from django.contrib.auth import mixins as auth_mixins
 from django.urls import reverse_lazy
 from django.views import generic as views
 from django.contrib.auth import views as auth_views, get_user_model
-from ecommerce.accounts.forms import UserCreateForm
+from ecommerce.accounts.forms import UserCreate, LoginForm, UserEditForm
 
 UserModel = get_user_model()
 
 
 class SignUpView(views.CreateView):
     template_name = 'accounts/register-page.html'
-    form_class = UserCreateForm
+    form_class = UserCreate
     success_url = reverse_lazy('store')
 
     def form_valid(self, form):
@@ -27,6 +27,7 @@ class SignUpView(views.CreateView):
 
 class SignInView(auth_views.LoginView):
     template_name = 'accounts/login-page.html'
+    form_class = LoginForm
 
 
 class SignOutView(auth_views.LogoutView):
@@ -42,6 +43,7 @@ class UserEditView(auth_mixins.LoginRequiredMixin, views.UpdateView):
     template_name = 'accounts/profile-edit-page.html'
     model = UserModel
     fields = ('first_name', 'last_name', 'email',)
+
 
     def get_success_url(self):
         return reverse_lazy('details user', kwargs={

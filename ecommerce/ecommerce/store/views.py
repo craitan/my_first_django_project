@@ -15,7 +15,8 @@ def store_view(request):
     page = page.get_page(page_list)
 
     context = {
-        'page': page
+        'page': page,
+
     }
     return render(request, 'store/store-page.html', context)
 

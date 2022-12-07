@@ -178,6 +178,8 @@ class ShippingInfo(models.Model):
 
 
 class ContactUs(models.Model):
+    MAX_SUBJECT_LENGTH = 50
+    MIN_SUBJECT_LENGTH = 2
     MIN_LEN_FIRST_NAME = 2
     MAX_LEN_FIRST_NAME = 20
     MIN_LEN_LAST_NAME = 2
@@ -204,6 +206,16 @@ class ContactUs(models.Model):
         validators=(
             validators.MinLengthValidator(MIN_LEN_LAST_NAME),
             validate_letters,
+        ),
+        null=False,
+        blank=False,
+    )
+
+    subject = models.CharField(
+        max_length=MAX_SUBJECT_LENGTH,
+        validators=(
+          validators.MinLengthValidator(MIN_SUBJECT_LENGTH),
+          validate_letters,
         ),
         null=False,
         blank=False,

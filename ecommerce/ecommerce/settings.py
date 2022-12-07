@@ -67,9 +67,12 @@ DATABASES = {
         'PORT': '5432',
     },
 }
-
-
-
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379',
+    }
+}
 if DEBUG:
     AUTH_PASSWORD_VALIDATORS = []
 else:
