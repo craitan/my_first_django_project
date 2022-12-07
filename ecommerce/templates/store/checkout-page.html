@@ -8,7 +8,7 @@
                     {{ form.as_p }}
                     {% csrf_token %}
                     <hr>
-                    <input id="form-button" class="btn btn-outline-success" type="submit" value="Finish">
+                    <input id="form-button" class="btn btn-outline-success" type="submit" value="Complete order">
                 </form>
             </div>
 
@@ -16,7 +16,7 @@
 
         <div class="col-lg-6">
             <div class="box-element">
-                <a class="btn btn-outline-dark" href="{% url 'new cart' %}">&#x2190; Back to Cart</a>
+                <a class="btn btn-outline-dark" href="{% url 'new cart' %}">&#x2190; Back to cart</a>
                 <hr>
                 <h3>Order Summary</h3>
                 <hr>

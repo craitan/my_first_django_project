@@ -10,9 +10,9 @@
                     <hr>
                     {% if user.is_staff %}
                         <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Edit
-                            Product</a>
+                            product</a>
                     {% else %}
-                        <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to Cart</a>
+                        <a class="btn btn-outline-success" href="{% url 'add to cart' pk=product.pk %}">Add to cart</a>
                         <a class="btn btn-outline-success" href="{% url 'details product' pk=product.pk %}">Details</a>
                     {% endif %}
                     <h4 style="display: inline-block;float: right">${{ product.product_price|floatformat:2 }}</h4>

@@ -3,9 +3,9 @@
         <div class="col-lg-6">
             <div class="box-element" >
                 {% if user.is_staff %}
-                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Store Page</a>
+                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Back to store</a>
                 {% else %}
-                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+                    <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue shopping</a>
                 {% endif %}
                 <br>
                 <br>
@@ -23,12 +23,12 @@
                             <th>
                                 {% if user.is_staff %}
                                     <a class="btn btn-outline-success" href="{% url 'edit product' pk=items.pk %}">Edit
-                                        Product</a>
+                                        product</a>
                                     <a class="btn btn-outline-danger" href="{% url 'delete product' pk=items.pk %}">Delete
-                                        Product</a>
+                                        product</a>
                                 {% else %}
                                     <a class="btn btn-outline-success" href="{% url 'add to cart' pk=items.pk %}">Add to
-                                        Cart</a>
+                                        cart</a>
                                 {% endif %}
                             </th>
                         </center>

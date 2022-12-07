@@ -3,13 +3,15 @@
 
     <div class="box-element">
         {% if user.is_staff %}
-            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Store Page</a>
+            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Store page</a>
         {% else %}
-            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue shopping</a>
         {% endif %}
         <br>
         <br>
         <table class="table">
+            <h3>Profile details</h3>
+            <hr>
             <tr><h5>User name: <strong>{{ user }}</strong></h5></tr>
             <tr><h5>Email: <strong>{{ user.email }}</strong></h5></tr>
             {% if user.first_name %}

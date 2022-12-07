@@ -2,8 +2,9 @@
 {% block content %}
     <div id="shipping-info">
         <form enctype="multipart/form-data" method="post" action="{% url 'add product' %}">
+            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Back to store</a>
             <hr>
-            <h2>Adding products to store.</h2>
+            <h2>Adding products to store</h2>
             <hr>
             <section class="changelist-form-container">
                 {{ form.as_p }}
