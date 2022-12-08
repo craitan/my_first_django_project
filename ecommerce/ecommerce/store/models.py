@@ -214,8 +214,8 @@ class ContactUs(models.Model):
     subject = models.CharField(
         max_length=MAX_SUBJECT_LENGTH,
         validators=(
-          validators.MinLengthValidator(MIN_SUBJECT_LENGTH),
-          validate_letters,
+            validators.MinLengthValidator(MIN_SUBJECT_LENGTH),
+            validate_letters,
         ),
         null=False,
         blank=False,

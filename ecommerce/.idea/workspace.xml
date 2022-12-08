@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/login-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/login-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-details-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-edit-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/register-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/register-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/checkout-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/checkout-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/product-add-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-add-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/product-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-delete-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/product-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-details-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/product-edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/product-edit-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/store-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/store-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/core/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/core/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Python projects/my_first_django_project/ecommerce/staticfiles/images",
+    "last_opened_file_path": "D:/Python projects/my_first_django_project/ecommerce",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -263,6 +253,7 @@
       <workItem from="1670337405570" duration="2384000" />
       <workItem from="1670409609188" duration="449000" />
       <workItem from="1670410069966" duration="19432000" />
+      <workItem from="1670498146978" duration="2755000" />
     </task>
     <servers />
   </component>
