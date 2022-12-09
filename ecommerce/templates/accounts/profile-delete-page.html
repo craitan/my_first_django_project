@@ -4,15 +4,18 @@
         <form method="post" action="{% url 'delete user' pk=object.pk %}">
             <a class="btn btn-outline-dark" href="{% url 'details user' pk=user.pk %}">&#x2190; Back to profile</a>
             <hr>
-            <center><h1>Are you sure you want to delete your profile ?</h1></center>
+            <div class="row" style="justify-content: center">
+                <h1>Are you sure you want to delete your profile ?</h1>
+            </div>
             <hr>
             <section class="changelist-form-container">
                 {{ form.as_p }}
                 {% csrf_token %}
-
-                <button id="form-button" class="btn btn-danger btn-primary" type="submit" value="Register">Delete Profile
-                </button>
-
+                <div class="row" style="justify-content: center">
+                    <button id="form-button" class="btn btn-danger btn-primary" type="submit" value="Register">Delete
+                        Profile
+                    </button>
+                </div>
             </section>
         </form>
     </div>

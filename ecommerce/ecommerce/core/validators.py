@@ -17,7 +17,7 @@ def username_validator(value):
 
     for ch in value:
         if not ch.isalnum() and ch not in ['_', '-']:
-            raise exceptions.ValidationError('Username must consist of letters, numbers, underscores and dashes only.')
+            raise exceptions.ValidationError('Username must consist only letters, numbers, underscores and dashes.')
 
     if len(value) < min_letters:
         raise exceptions.ValidationError('Username must have at least three letters.')

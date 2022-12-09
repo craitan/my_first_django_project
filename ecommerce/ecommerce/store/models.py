@@ -178,8 +178,9 @@ class ShippingInfo(models.Model):
 
 
 class ContactUs(models.Model):
-    MAX_SUBJECT_LENGTH = 50
+    MAX_SUBJECT_LENGTH = 20
     MIN_SUBJECT_LENGTH = 2
+    MIN_LEN_MESSAGE = 10
     MIN_LEN_FIRST_NAME = 2
     MAX_LEN_FIRST_NAME = 20
     MIN_LEN_LAST_NAME = 2
@@ -228,6 +229,9 @@ class ContactUs(models.Model):
 
     massage = models.TextField(
         max_length=250,
+        validators=(
+            validators.MinLengthValidator(MIN_LEN_MESSAGE),
+        ),
         null=False,
         blank=False,
     )

@@ -134,6 +134,10 @@ def checkout_view(request):
     return render(request, 'store/checkout-page.html', context)
 
 
+def contact(request):
+    return render(request, 'store/contact-submitted.html')
+
+
 def contact_us(request):
     if request.method == 'GET':
         form = ContactUsForm()
@@ -141,7 +145,7 @@ def contact_us(request):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('store')
+            return redirect('contact')
 
     context = {
         'form': form,

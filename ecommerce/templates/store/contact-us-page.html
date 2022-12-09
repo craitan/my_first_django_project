@@ -1,8 +1,20 @@
 {% extends 'base/base.html' %}
 {% block content %}
-    <form method="post" action="{% url 'contact us' %}">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input id="form-button" class="btn btn-success btn" type="submit" value="Send message">
-    </form>
+    <div id="shipping-info">
+        <form method="post" action="{% url 'contact us' %}">
+            <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue shopping</a>
+            <hr>
+            <h3>Contact Us</h3>
+            <hr>
+            <section class="changelist-form-container">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <button id="form-button" class="btn btn-success btn-primary" type="submit" value="Send message">Submit
+                </button>
+                <hr>
+            </section>
+        </form>
+    </div>
 {% endblock %}
+
+
