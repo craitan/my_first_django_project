@@ -1,17 +1,17 @@
+import os
+
 from pathlib import Path
 
 from django.urls import reverse_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-zjx^-@id-vfk2=7w_@fxru%_rk(04*f%y4n%04b354um-e5tth'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = True
+DEBUG = int(os.environ.get('DEBUG', 1))
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
+# TODO: FIX THE EMAIL SENDER AND DATABASES
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -22,8 +22,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ecommerce.accounts',
-    'ecommerce.store',
     'ecommerce.cart',
+    'ecommerce.store',
 ]
 
 MIDDLEWARE = [
@@ -59,20 +59,15 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'store_db',
-        'USER': 'postgres-user',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': os.environ.get('DB_ENGINE'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     },
 }
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379',
-    }
-}
+
 if DEBUG:
     AUTH_PASSWORD_VALIDATORS = []
 else:

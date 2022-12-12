@@ -5,7 +5,8 @@ from django.shortcuts import render, redirect
 from ecommerce.core.utils import get_item, get_or_create_cart, get_total_items_count, get_total_items_price
 from ecommerce.store.forms import ShippingAddressForm, ProductCrateForm, ProductEditForm, ProductDeleteForm, \
     ContactUsForm
-from ecommerce.store.models import Product
+from ecommerce.store.models import Product, ContactUs
+from django.views import generic as views
 
 
 def store_view(request):
@@ -134,20 +135,11 @@ def checkout_view(request):
     return render(request, 'store/checkout-page.html', context)
 
 
-def contact(request):
-    return render(request, 'store/contact-submitted.html')
+class ContactView(views.FormView):
+    model = ContactUs
+    form_class = ContactUsForm
+    template_name = 'store/contact-us-page.html'
 
-
-def contact_us(request):
-    if request.method == 'GET':
-        form = ContactUsForm()
-    else:
-        form = ContactUsForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('contact')
-
-    context = {
-        'form': form,
-    }
-    return render(request, 'store/contact-us-page.html', context)
+    def form_valid(self, form):
+        form.save()
+        return render(self.request, 'store/contact-submitted.html')

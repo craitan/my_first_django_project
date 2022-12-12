@@ -5,16 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ece669f9-f9ed-47ed-9ea0-3c5f0ddf9511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/store/migrations/0034_alter_contactus_massage_alter_contactus_subject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/store/contact-submitted.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/envs/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/envs/.env.prod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/base/13757/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/base/16384/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/global/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/pg_stat_tmp/db_13757.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/pg_stat_tmp/db_16384.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/pg_stat_tmp/global.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postgresql/pgdata/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/my_first_django_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/my_first_django_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/core/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/core/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/27094176_-_huawei_watch_gt_3_42mm_leather_strap_-_sided.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/shoe.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/shoe_8e3fBKQ.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/shoe_jCJNOcb.jfif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts/profile-delete-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store/contact-us-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store/contact-us-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -76,11 +92,11 @@
       <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\cart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce\envs" />
+      <recent name="D:\Python projects\my_first_django_project\ecommerce" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\staticfiles\images" />
       <recent name="D:\Python projects\my_first_django_project\ecommerce\ecommerce\core" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\email_templates" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates\accounts" />
-      <recent name="D:\Python projects\my_first_django_project\ecommerce\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.ecommerce">
@@ -128,6 +144,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ecommerce" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ecommerce/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,28 +188,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ecommerce" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ecommerce/accounts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ecommerce/accounts/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ecommerce" type="Python.DjangoServer" factoryName="Django server">
       <module name="ecommerce" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,12 +195,26 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="ecommerce.settings" />
+        <env name="MY_VAR" value="172" />
       </envs>
       <option name="SDK_HOME" value="D:\Python projects\my_first_django_project\ecommerce\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.7 (ecommerce)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH="envs/.env" />
+          <ENTRY IS_ENABLED="false" PARSER="env" IS_EXECUTABLE="false" PATH="envs/.env.prod" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -196,19 +226,40 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="...postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="../docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Django Server.ecommerce" />
+      <item itemvalue="Docker....postgres: Compose Deployment" />
+      <item itemvalue="Python.settings" />
       <item itemvalue="Python.eksperiment" />
       <item itemvalue="Python.models" />
-      <item itemvalue="Python.views" />
       <item itemvalue="Python.views (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker....postgres: Compose Deployment" />
+        <item itemvalue="Python.settings" />
         <item itemvalue="Python.eksperiment" />
         <item itemvalue="Python.views (1)" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +312,20 @@
       <workItem from="1670409609188" duration="449000" />
       <workItem from="1670410069966" duration="19432000" />
       <workItem from="1670498146978" duration="3764000" />
-      <workItem from="1670578450872" duration="3028000" />
+      <workItem from="1670578450872" duration="5725000" />
+      <workItem from="1670585794114" duration="970000" />
+      <workItem from="1670586804647" duration="82000" />
+      <workItem from="1670586895549" duration="866000" />
+      <workItem from="1670587785928" duration="3491000" />
+      <workItem from="1670591289470" duration="5628000" />
+      <workItem from="1670599557888" duration="283000" />
+      <workItem from="1670599859693" duration="1475000" />
+      <workItem from="1670604628129" duration="41000" />
+      <workItem from="1670604694157" duration="832000" />
+      <workItem from="1670605527807" duration="1454000" />
+      <workItem from="1670659047485" duration="1509000" />
+      <workItem from="1670663538655" duration="7804000" />
+      <workItem from="1670839811403" duration="1709000" />
     </task>
     <servers />
   </component>
@@ -297,6 +361,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ecommerce$settings.coverage" NAME="settings Coverage Results" MODIFIED="1670590393658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce" />
     <SUITE FILE_PATH="coverage/ecommerce$views.coverage" NAME="views Coverage Results" MODIFIED="1668883159920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce/accounts" />
     <SUITE FILE_PATH="coverage/ecommerce$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1669028028049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ecommerce/cart" />
     <SUITE FILE_PATH="coverage/ecommerce$eksperiment.coverage" NAME="eksperiment Coverage Results" MODIFIED="1669799707773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../PycharmProjects/basics and fundamentals projects/MyFirstProject" />
