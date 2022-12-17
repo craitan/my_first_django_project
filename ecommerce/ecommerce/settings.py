@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 
 import cloudinary
+
 from django.urls import reverse_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
