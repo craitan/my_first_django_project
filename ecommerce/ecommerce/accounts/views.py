@@ -44,7 +44,6 @@ class UserEditView(auth_mixins.LoginRequiredMixin, views.UpdateView):
     model = UserModel
     form_class = UserEditForm
 
-
     def get_success_url(self):
         return reverse_lazy('details user', kwargs={
             'pk': self.request.user.pk,

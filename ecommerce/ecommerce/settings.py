@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = int(os.environ.get('DEBUG', 1))
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
-# TODO: FIX THE EMAIL SENDER AND DATABASES
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -111,10 +111,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.AppUser'
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'info.project.ecommerce@gmail.com'
-EMAIL_HOST_PASSWORD = 'iveuryyuiuflqgvl'
-EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'info.project.ecommerce@gmail.com'
+EMAIL_HOST = os.environ.get('EMAIL_HOST')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = os.environ.get('EMAIL_PORT')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
 LOGIN_REDIRECT_URL = reverse_lazy('store')

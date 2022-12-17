@@ -4,7 +4,6 @@ from ecommerce.core.utils import get_item, get_or_create_cart, get_or_create_car
     get_total_items_price
 
 
-
 @login_required
 def new_cart_view(request):
     cart, create = get_or_create_cart(request.user)
