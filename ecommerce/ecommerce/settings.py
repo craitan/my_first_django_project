@@ -2,6 +2,7 @@ import os
 
 from pathlib import Path
 
+import cloudinary
 from django.urls import reverse_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,7 +13,6 @@ DEBUG = int(os.environ.get('DEBUG', 1))
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -20,6 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cloudinary',
 
     'ecommerce.accounts',
     'ecommerce.cart',
@@ -104,7 +106,14 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
+# MEDIA_ROOT = BASE_DIR / 'mediafiles'
+
+cloudinary.config(
+    cloud_name="db5iugz2r",
+    api_key="592287926232463",
+    api_secret="DPRcdTX1r99-w3DjuZ_Awh9zA80",
+    secure=True
+)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

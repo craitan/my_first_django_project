@@ -1,3 +1,4 @@
+from cloudinary import models as cloudinary_models
 from django.contrib.auth import get_user_model
 from django.core import validators
 from django.db import models
@@ -31,7 +32,7 @@ class Product(models.Model):
         blank=False,
     )
 
-    product_image = models.ImageField(
+    product_image = cloudinary_models.CloudinaryField(
         null=False,
         blank=False,
     )
